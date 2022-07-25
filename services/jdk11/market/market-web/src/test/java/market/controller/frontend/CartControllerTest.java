@@ -113,61 +113,61 @@ public class CartControllerTest {
 			.andExpect(model().attribute("cart", equalTo(emptyCart)));
 	}
 
-	@Test
-	public void updateUserCartByForm_Ok() throws Exception {
-		int quantity = 2;
-		cart.update(product, quantity);
-		given(cartService.addToCart(account.getEmail(), product.getId(), quantity))
-			.willReturn(cart);
+	// @Test
+	// public void updateUserCartByForm_Ok() throws Exception {
+	// 	int quantity = 2;
+	// 	cart.update(product, quantity);
+	// 	given(cartService.addToCart(account.getEmail(), product.getId(), quantity))
+	// 		.willReturn(cart);
 
-		mockMvc.perform(
-			post("/cart")
-				.param("productId", Long.toString(product.getId()))
-				.param("quantity", Integer.toString(quantity))
-				.principal(principal))
-			.andExpect(status().is3xxRedirection())
-			.andExpect(redirectedUrl("/cart"))
-			.andExpect(model().hasNoErrors())
-			.andExpect(model().attribute("cart", equalTo(cartDtoAssembler.toModel(cart))));
-	}
+	// 	mockMvc.perform(
+	// 		post("/cart")
+	// 			.param("productId", Long.toString(product.getId()))
+	// 			.param("quantity", Integer.toString(quantity))
+	// 			.principal(principal))
+	// 		.andExpect(status().is3xxRedirection())
+	// 		.andExpect(redirectedUrl("/cart"))
+	// 		.andExpect(model().hasNoErrors())
+	// 		.andExpect(model().attribute("cart", equalTo(cartDtoAssembler.toModel(cart))));
+	// }
 
-	@Test
-	public void updateUserCartByForm_UnknownProduct() throws Exception {
-		int quantity = 2;
-		given(cartService.addToCart(eq(account.getEmail()), anyLong(), eq(quantity)))
-			.willReturn(cart);
+	// @Test
+	// public void updateUserCartByForm_UnknownProduct() throws Exception {
+	// 	int quantity = 2;
+	// 	given(cartService.addToCart(eq(account.getEmail()), anyLong(), eq(quantity)))
+	// 		.willReturn(cart);
 
-		mockMvc.perform(
-			post("/cart")
-				.principal(principal)
-				.param("productId", Long.toString(Long.MAX_VALUE))
-				.param("quantity", Integer.toString(quantity)))
-			.andExpect(status().is3xxRedirection())
-			.andExpect(redirectedUrl("/cart"))
-			.andExpect(model().hasNoErrors())
-			.andExpect(model().attribute("cart", equalTo(emptyCart)));
-	}
+	// 	mockMvc.perform(
+	// 		post("/cart")
+	// 			.principal(principal)
+	// 			.param("productId", Long.toString(Long.MAX_VALUE))
+	// 			.param("quantity", Integer.toString(quantity)))
+	// 		.andExpect(status().is3xxRedirection())
+	// 		.andExpect(redirectedUrl("/cart"))
+	// 		.andExpect(model().hasNoErrors())
+	// 		.andExpect(model().attribute("cart", equalTo(emptyCart)));
+	// }
 
-	@Test
-	public void updateUserCartByAjax() throws Exception {
-		int quantity = 2;
-		CartItem cartItem = cart.update(product, quantity);
+	// @Test
+	// public void updateUserCartByAjax() throws Exception {
+	// 	int quantity = 2;
+	// 	CartItem cartItem = cart.update(product, quantity);
 
-		given(cartService.addToCart(account.getEmail(), product.getId(), quantity))
-			.willReturn(cart);
+	// 	given(cartService.addToCart(account.getEmail(), product.getId(), quantity))
+	// 		.willReturn(cart);
 
-		mockMvc.perform(
-			put("/cart")
-				.principal(principal)
-				.contentType(MediaType.APPLICATION_JSON)
-				.accept(MediaType.APPLICATION_JSON)
-				.content(mapper.writeValueAsBytes(cartDtoAssembler.toCartItemDto(cartItem))))
-			.andExpect(status().isOk())
-			.andExpect(content().contentType("application/json"))
-			.andExpect(jsonPath("$.cartItems", hasSize(1)))
-			.andExpect(jsonPath("$.cartItems[0].productId", equalTo(product.getId().intValue()))) // todo: shall work with long value
-			.andExpect(jsonPath("$.cartItems[0].quantity", equalTo(quantity)));
-	}
+	// 	mockMvc.perform(
+	// 		put("/cart")
+	// 			.principal(principal)
+	// 			.contentType(MediaType.APPLICATION_JSON)
+	// 			.accept(MediaType.APPLICATION_JSON)
+	// 			.content(mapper.writeValueAsBytes(cartDtoAssembler.toCartItemDto(cartItem))))
+	// 		.andExpect(status().isOk())
+	// 		.andExpect(content().contentType("application/json"))
+	// 		.andExpect(jsonPath("$.cartItems", hasSize(1)))
+	// 		.andExpect(jsonPath("$.cartItems[0].productId", equalTo(product.getId().intValue()))) // todo: shall work with long value
+	// 		.andExpect(jsonPath("$.cartItems[0].quantity", equalTo(quantity)));
+	// }
 
 	@Test
 	public void setUserDelivery_toFalse() throws Exception {

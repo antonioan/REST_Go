@@ -1,0 +1,9 @@
+se/devscout/scoutapi/IntegrationTest.class
+se/devscout/scoutapi/SystemIntegrationTest.class
+se/devscout/scoutapi/SystemMessagesIntegrationTest.class
+se/devscout/scoutapi/ActivitiesIntegrationTest.class
+se/devscout/scoutapi/TagsIntegrationTest.class
+se/devscout/scoutapi/util/MediaFileUtilsTest.class
+se/devscout/scoutapi/SerializationTest.class
+se/devscout/scoutapi/UsersIntegrationTest.class
+se/devscout/scoutapi/MediaFilesIntegrationTest.class

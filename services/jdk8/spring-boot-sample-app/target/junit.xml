@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="0.872682">
+<testcase classname="the health can be retrieved" name="client makes call to GET /health" time="0.802798">
+<system-out><![CDATA[When the client calls /health...............................................passed
+Then the client receives response status code of 200........................passed
+]]></system-out>
+</testcase>
+<testcase classname="the version can be retrieved" name="client makes call to GET /version" time="0.069884">
+<system-out><![CDATA[When the client calls /version..............................................passed
+Then the client receives status code of 200.................................passed
+And the client receives server version 1.0..................................passed
+]]></system-out>
+</testcase>
+</testsuite>

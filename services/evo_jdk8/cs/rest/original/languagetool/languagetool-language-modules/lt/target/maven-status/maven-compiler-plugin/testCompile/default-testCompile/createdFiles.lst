@@ -1,0 +1,3 @@
+org/languagetool/LithuanianConcurrencyTest.class
+org/languagetool/tokenizers/lt/LithuanianSRXSentenceTokenizerTest.class
+org/languagetool/rules/lt/LithuanianPatternRuleTest.class

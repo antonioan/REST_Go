@@ -47,7 +47,22 @@ public class CartServiceImpl implements CartService {
 
 	@Transactional
 	@Override
-	public Cart addToCart(String userEmail, long productId, int quantity) {
+	public Product addToCart(String userEmail, long productId, int quantity) {
+		Cart cart = getCartOrCreate(userEmail);
+		Product product = productService.getProduct(productId);
+		if (product.isAvailable()) {
+			cart.update(product, quantity);
+			cartDAO.save(cart);
+			return product;
+		} else {
+			return null;
+			// return cart;
+		}
+	}
+
+	@Transactional
+	@Override
+	public Cart addToCartReturnCart(String userEmail, long productId, int quantity) {
 		Cart cart = getCartOrCreate(userEmail);
 		Product product = productService.getProduct(productId);
 		if (product.isAvailable()) {

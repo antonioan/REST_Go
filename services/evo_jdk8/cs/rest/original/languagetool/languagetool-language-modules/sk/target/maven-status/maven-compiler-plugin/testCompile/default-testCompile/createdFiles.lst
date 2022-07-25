@@ -1,0 +1,8 @@
+org/languagetool/synthesis/sk/SlovakSynthesizerTest.class
+org/languagetool/rules/sk/SlovakTest.class
+org/languagetool/SlovakConcurrencyTest.class
+org/languagetool/rules/sk/CompoundRuleTest.class
+org/languagetool/tagging/sk/SlovakTaggerTest.class
+org/languagetool/rules/sk/LanguageSpecificSpellcheckerTest.class
+org/languagetool/tokenizers/sk/SlovakSentenceTokenizerTest.class
+org/languagetool/rules/sk/SlovakPatternRuleTest.class

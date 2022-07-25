@@ -1,0 +1,7 @@
+org/languagetool/BretonConcurrencyTest.class
+org/languagetool/rules/br/LanguageSpecificSpellcheckerTest.class
+org/languagetool/rules/br/BretonTest.class
+org/languagetool/rules/br/BretonPatternRuleTest.class
+org/languagetool/tokenizers/br/BretonWordTokenizerTest.class
+org/languagetool/rules/br/MorfologikBretonSpellerRuleTest.class
+org/languagetool/rules/br/TopoReplaceRuleTest.class

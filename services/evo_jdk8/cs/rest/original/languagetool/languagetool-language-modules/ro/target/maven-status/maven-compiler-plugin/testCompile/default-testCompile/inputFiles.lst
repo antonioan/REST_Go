@@ -1,0 +1,14 @@
+/Users/antonio/workspace/benchmark/REST_GO/services/evo_jdk8/cs/rest/original/languagetool/languagetool-language-modules/ro/src/test/java/org/languagetool/synthesis/ro/RomanianSynthesizerTest.java
+/Users/antonio/workspace/benchmark/REST_GO/services/evo_jdk8/cs/rest/original/languagetool/languagetool-language-modules/ro/src/test/java/org/languagetool/RomanianConcurrencyTest.java
+/Users/antonio/workspace/benchmark/REST_GO/services/evo_jdk8/cs/rest/original/languagetool/languagetool-language-modules/ro/src/test/java/org/languagetool/tokenizers/ro/RomanianWordTokenizerTest.java
+/Users/antonio/workspace/benchmark/REST_GO/services/evo_jdk8/cs/rest/original/languagetool/languagetool-language-modules/ro/src/test/java/org/languagetool/rules/ro/GenericUnpairedBracketsRuleTest.java
+/Users/antonio/workspace/benchmark/REST_GO/services/evo_jdk8/cs/rest/original/languagetool/languagetool-language-modules/ro/src/test/java/org/languagetool/rules/ro/SimpleReplaceRuleTest.java
+/Users/antonio/workspace/benchmark/REST_GO/services/evo_jdk8/cs/rest/original/languagetool/languagetool-language-modules/ro/src/test/java/org/languagetool/tagging/ro/AbstractRomanianTaggerTest.java
+/Users/antonio/workspace/benchmark/REST_GO/services/evo_jdk8/cs/rest/original/languagetool/languagetool-language-modules/ro/src/test/java/org/languagetool/rules/ro/CompoundRuleTest.java
+/Users/antonio/workspace/benchmark/REST_GO/services/evo_jdk8/cs/rest/original/languagetool/languagetool-language-modules/ro/src/test/java/org/languagetool/tokenizers/ro/RomanianSentenceTokenizerTest.java
+/Users/antonio/workspace/benchmark/REST_GO/services/evo_jdk8/cs/rest/original/languagetool/languagetool-language-modules/ro/src/test/java/org/languagetool/tagging/ro/RomanianTaggerDiacriticsTest.java
+/Users/antonio/workspace/benchmark/REST_GO/services/evo_jdk8/cs/rest/original/languagetool/languagetool-language-modules/ro/src/test/java/org/languagetool/rules/ro/RomanianTest.java
+/Users/antonio/workspace/benchmark/REST_GO/services/evo_jdk8/cs/rest/original/languagetool/languagetool-language-modules/ro/src/test/java/org/languagetool/rules/ro/LanguageSpecificSpellcheckerTest.java
+/Users/antonio/workspace/benchmark/REST_GO/services/evo_jdk8/cs/rest/original/languagetool/languagetool-language-modules/ro/src/test/java/org/languagetool/tagging/disambiguation/rules/ro/RomanianRuleDisambiguatorTest.java
+/Users/antonio/workspace/benchmark/REST_GO/services/evo_jdk8/cs/rest/original/languagetool/languagetool-language-modules/ro/src/test/java/org/languagetool/rules/ro/RomanianPatternRuleTest.java
+/Users/antonio/workspace/benchmark/REST_GO/services/evo_jdk8/cs/rest/original/languagetool/languagetool-language-modules/ro/src/test/java/org/languagetool/tagging/ro/RomanianTaggerTest.java

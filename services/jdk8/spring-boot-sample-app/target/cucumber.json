@@ -1,0 +1,120 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 2,
+        "name": "client makes call to GET /health",
+        "description": "",
+        "id": "the-health-can-be-retrieved;client-makes-call-to-get-/health",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 792075792,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "the client calls /health",
+            "match": {
+              "location": "GetHealthStep.the_client_issues_GET_health()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 10722208,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the client receives response status code of 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 44
+                }
+              ],
+              "location": "GetHealthStep.the_client_receives_status_code_of(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "the health can be retrieved",
+    "description": "",
+    "id": "the-health-can-be-retrieved",
+    "keyword": "Feature",
+    "uri": "health.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 2,
+        "name": "client makes call to GET /version",
+        "description": "",
+        "id": "the-version-can-be-retrieved;client-makes-call-to-get-/version",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 65762500,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "the client calls /version",
+            "match": {
+              "location": "GetVersionStep.the_client_issues_GET_version()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 523417,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the client receives status code of 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 35
+                }
+              ],
+              "location": "GetVersionStep.the_client_receives_status_code_of(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3598125,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the client receives server version 1.0",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1.0",
+                  "offset": 35
+                }
+              ],
+              "location": "GetVersionStep.the_client_receives_server_version_body(String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "the version can be retrieved",
+    "description": "",
+    "id": "the-version-can-be-retrieved",
+    "keyword": "Feature",
+    "uri": "version.feature"
+  }
+]

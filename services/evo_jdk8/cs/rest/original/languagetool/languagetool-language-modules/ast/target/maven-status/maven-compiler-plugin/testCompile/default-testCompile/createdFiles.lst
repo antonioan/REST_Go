@@ -1,0 +1,6 @@
+org/languagetool/language/rules/ast/MorfologikAsturianSpellerRuleTest.class
+org/languagetool/rules/ast/AsturianPatternRuleTest.class
+org/languagetool/rules/ast/AsturianTest.class
+org/languagetool/tokenizers/ast/AsturianSRXSentenceTokenizerTest.class
+org/languagetool/AsturianConcurrencyTest.class
+org/languagetool/rules/ast/LanguageSpecificSpellcheckerTest.class

@@ -1,0 +1,17 @@
+/Users/antonio/workspace/benchmark/REST_GO/services/evo_jdk8/cs/rest/original/languagetool/languagetool-language-modules/ru/src/test/java/org/languagetool/RussianConcurrencyTest.java
+/Users/antonio/workspace/benchmark/REST_GO/services/evo_jdk8/cs/rest/original/languagetool/languagetool-language-modules/ru/src/test/java/org/languagetool/synthesis/ru/RussianSynthesizerTest.java
+/Users/antonio/workspace/benchmark/REST_GO/services/evo_jdk8/cs/rest/original/languagetool/languagetool-language-modules/ru/src/test/java/org/languagetool/rules/ru/RussianSimpleReplaceRuleTest.java
+/Users/antonio/workspace/benchmark/REST_GO/services/evo_jdk8/cs/rest/original/languagetool/languagetool-language-modules/ru/src/test/java/org/languagetool/rules/ru/RussianUnpairedBracketsRuleTest.java
+/Users/antonio/workspace/benchmark/REST_GO/services/evo_jdk8/cs/rest/original/languagetool/languagetool-language-modules/ru/src/test/java/org/languagetool/tagging/ru/RussianTaggerTest.java
+/Users/antonio/workspace/benchmark/REST_GO/services/evo_jdk8/cs/rest/original/languagetool/languagetool-language-modules/ru/src/test/java/org/languagetool/rules/ru/MorfologikRussianYOSpellerRuleTest.java
+/Users/antonio/workspace/benchmark/REST_GO/services/evo_jdk8/cs/rest/original/languagetool/languagetool-language-modules/ru/src/test/java/org/languagetool/rules/ru/RussianSpecificCaseRuleTest.java
+/Users/antonio/workspace/benchmark/REST_GO/services/evo_jdk8/cs/rest/original/languagetool/languagetool-language-modules/ru/src/test/java/org/languagetool/rules/ru/LanguageSpecificSpellcheckerTest.java
+/Users/antonio/workspace/benchmark/REST_GO/services/evo_jdk8/cs/rest/original/languagetool/languagetool-language-modules/ru/src/test/java/org/languagetool/rules/ru/MorfologikRussianSpellerRuleTest.java
+/Users/antonio/workspace/benchmark/REST_GO/services/evo_jdk8/cs/rest/original/languagetool/languagetool-language-modules/ru/src/test/java/org/languagetool/rules/ru/RussianWordCoherencyRuleTest.java
+/Users/antonio/workspace/benchmark/REST_GO/services/evo_jdk8/cs/rest/original/languagetool/languagetool-language-modules/ru/src/test/java/org/languagetool/rules/ru/RussianTest.java
+/Users/antonio/workspace/benchmark/REST_GO/services/evo_jdk8/cs/rest/original/languagetool/languagetool-language-modules/ru/src/test/java/org/languagetool/rules/ru/RussianPatternRuleTest.java
+/Users/antonio/workspace/benchmark/REST_GO/services/evo_jdk8/cs/rest/original/languagetool/languagetool-language-modules/ru/src/test/java/org/languagetool/rules/ru/DateCheckFilterTest.java
+/Users/antonio/workspace/benchmark/REST_GO/services/evo_jdk8/cs/rest/original/languagetool/languagetool-language-modules/ru/src/test/java/org/languagetool/rules/ru/RussianVerbConjugationRuleTest.java
+/Users/antonio/workspace/benchmark/REST_GO/services/evo_jdk8/cs/rest/original/languagetool/languagetool-language-modules/ru/src/test/java/org/languagetool/tokenizers/ru/RussianSRXSentenceTokenizerTest.java
+/Users/antonio/workspace/benchmark/REST_GO/services/evo_jdk8/cs/rest/original/languagetool/languagetool-language-modules/ru/src/test/java/org/languagetool/rules/ru/RussianDashRuleTest.java
+/Users/antonio/workspace/benchmark/REST_GO/services/evo_jdk8/cs/rest/original/languagetool/languagetool-language-modules/ru/src/test/java/org/languagetool/rules/ru/RussianCompoundRuleTest.java

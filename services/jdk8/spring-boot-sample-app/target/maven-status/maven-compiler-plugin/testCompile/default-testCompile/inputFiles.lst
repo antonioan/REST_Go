@@ -1,0 +1,10 @@
+/Users/antonio/workspace/benchmark/REST_GO/services/jdk8/spring-boot-sample-app/src/test/java/com/test/sampleapp/sanity/ApplicationSanityCheck_ITT.java
+/Users/antonio/workspace/benchmark/REST_GO/services/jdk8/spring-boot-sample-app/src/test/java/com/test/sampleapp/integration/GetVersionStep.java
+/Users/antonio/workspace/benchmark/REST_GO/services/jdk8/spring-boot-sample-app/src/test/java/org/evo/EMDriver.java
+/Users/antonio/workspace/benchmark/REST_GO/services/jdk8/spring-boot-sample-app/src/test/java/com/test/sampleapp/retry/RetryException.java
+/Users/antonio/workspace/benchmark/REST_GO/services/jdk8/spring-boot-sample-app/src/test/java/com/test/sampleapp/integration/GetHealthStep.java
+/Users/antonio/workspace/benchmark/REST_GO/services/jdk8/spring-boot-sample-app/src/test/java/com/test/sampleapp/retry/Retry.java
+/Users/antonio/workspace/benchmark/REST_GO/services/jdk8/spring-boot-sample-app/src/test/java/com/test/sampleapp/retry/RetryRule.java
+/Users/antonio/workspace/benchmark/REST_GO/services/jdk8/spring-boot-sample-app/src/test/java/com/test/sampleapp/acceptance/ApplicationE2E.java
+/Users/antonio/workspace/benchmark/REST_GO/services/jdk8/spring-boot-sample-app/src/test/java/com/test/sampleapp/integration/CucumberRoot.java
+/Users/antonio/workspace/benchmark/REST_GO/services/jdk8/spring-boot-sample-app/src/test/java/com/test/sampleapp/integration/CucumberIntegrationIT.java

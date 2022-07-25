@@ -1,0 +1,8 @@
+org/languagetool/rules/ja/JapaneseTest.class
+org/languagetool/rules/ja/LanguageSpecificSpellcheckerTest.class
+org/languagetool/JLanguageToolTest.class
+org/languagetool/tagging/ja/JapaneseTaggerTest.class
+org/languagetool/tokenizers/ja/JapaneseWordTokenizerTest.class
+org/languagetool/tokenizers/ja/JapaneseSRXSentenceTokenizerTest.class
+org/languagetool/rules/ja/JapanesePatternRuleTest.class
+org/languagetool/JapaneseConcurrencyTest.class

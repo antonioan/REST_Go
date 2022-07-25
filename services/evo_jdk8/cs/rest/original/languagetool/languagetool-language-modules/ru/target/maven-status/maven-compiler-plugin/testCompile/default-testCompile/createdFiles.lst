@@ -1,0 +1,17 @@
+org/languagetool/tokenizers/ru/RussianSRXSentenceTokenizerTest.class
+org/languagetool/rules/ru/MorfologikRussianSpellerRuleTest.class
+org/languagetool/rules/ru/RussianTest.class
+org/languagetool/rules/ru/RussianUnpairedBracketsRuleTest.class
+org/languagetool/rules/ru/RussianVerbConjugationRuleTest.class
+org/languagetool/rules/ru/RussianPatternRuleTest.class
+org/languagetool/tagging/ru/RussianTaggerTest.class
+org/languagetool/rules/ru/LanguageSpecificSpellcheckerTest.class
+org/languagetool/rules/ru/RussianSpecificCaseRuleTest.class
+org/languagetool/rules/ru/RussianDashRuleTest.class
+org/languagetool/RussianConcurrencyTest.class
+org/languagetool/rules/ru/RussianCompoundRuleTest.class
+org/languagetool/rules/ru/RussianSimpleReplaceRuleTest.class
+org/languagetool/rules/ru/RussianWordCoherencyRuleTest.class
+org/languagetool/rules/ru/MorfologikRussianYOSpellerRuleTest.class
+org/languagetool/synthesis/ru/RussianSynthesizerTest.class
+org/languagetool/rules/ru/DateCheckFilterTest.class

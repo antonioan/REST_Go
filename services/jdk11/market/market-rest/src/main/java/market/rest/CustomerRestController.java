@@ -9,6 +9,7 @@ import market.service.UserAccountService;
 import org.springframework.hateoas.server.ExposesResourceFor;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.access.annotation.Secured;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -56,10 +57,43 @@ public class CustomerRestController {
 		return toDto(newAccount);
 	}
 
+	@PostMapping("/login")
+	@ResponseStatus(HttpStatus.ACCEPTED)
+	public UserDTO loginCustomer(@RequestBody LoginCreds loginCreds) {
+		UserAccount account = userAccountService.findByEmail(loginCreds.email);
+		if (account != null) {
+			authenticationService.authenticate(loginCreds.email, loginCreds.password);
+			return toDto(account);
+		} else {
+			throw new UsernameNotFoundException("email not found");
+		}
+	}
+
 	private UserDTO toDto(UserAccount newAccount) {
 		UserDTO dto = userAccountDtoAssembler.toModel(newAccount);
 		dto.add(linkTo(CartRestController.class).withRel("Shopping cart"));
 		dto.add(linkTo(getClass()).withRel("Manage contacts"));
 		return dto;
+	}
+
+	public static class LoginCreds {
+		String email;
+		String password;
+
+		public String getEmail() {
+			return email;
+		}
+
+		public void setEmail(String email) {
+			this.email = email;
+		}
+
+		public String getPassword() {
+			return password;
+		}
+
+		public void setPassword(String password) {
+			this.password = password;
+		}
 	}
 }

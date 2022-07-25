@@ -1,0 +1,5 @@
+org/languagetool/rules/da/LanguageSpecificSpellcheckerTest.class
+org/languagetool/DanishConcurrencyTest.class
+org/languagetool/rules/da/DanishTest.class
+org/languagetool/tokenizers/da/DanishSRXSentenceTokenizerTest.class
+org/languagetool/rules/da/DanishPatternRuleTest.class

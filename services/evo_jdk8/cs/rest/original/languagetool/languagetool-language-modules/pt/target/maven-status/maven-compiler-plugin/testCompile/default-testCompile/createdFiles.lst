@@ -1,0 +1,16 @@
+org/languagetool/rules/pt/PortugueseWikipediaRuleTest.class
+org/languagetool/tagging/pt/PortugueseTaggerTest.class
+org/languagetool/rules/pt/PortugueseClicheRuleTest.class
+org/languagetool/tokenizers/pt/PortugueseWordTokenizerTest.class
+org/languagetool/BrazilianPortugueseConcurrencyTest.class
+org/languagetool/synthesis/pt/PortugueseSynthesizerTest.class
+org/languagetool/PortugalPortugueseConcurrencyTest.class
+org/languagetool/rules/pt/PortugueseWordRepeatBeginningRuleTest.class
+org/languagetool/rules/pt/PortuguesePatternRuleTest.class
+org/languagetool/rules/pt/PreReformPortugueseDashRuleTest.class
+org/languagetool/rules/pt/PortugueseWordRepeatRuleTest.class
+org/languagetool/rules/pt/PostReformPortugueseDashRuleTest.class
+org/languagetool/rules/pt/PortugueseUnitConversionRuleTest.class
+org/languagetool/tokenizers/pt/PortugueseSRXSentenceTokenizerTest.class
+org/languagetool/rules/pt/PortugueseTest.class
+org/languagetool/tagging/disambiguation/pt/PortugueseDisambiguationRuleTest.class

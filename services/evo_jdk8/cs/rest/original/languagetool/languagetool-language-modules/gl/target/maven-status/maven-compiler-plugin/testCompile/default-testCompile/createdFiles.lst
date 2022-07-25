@@ -1,0 +1,5 @@
+org/languagetool/tagging/gl/GalicianTaggerTest.class
+org/languagetool/rules/gl/GalicianTest.class
+org/languagetool/rules/gl/GalicianPatternRuleTest.class
+org/languagetool/GalicianConcurrencyTest.class
+org/languagetool/rules/gl/LanguageSpecificSpellcheckerTest.class

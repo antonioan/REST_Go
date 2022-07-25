@@ -1,0 +1,7 @@
+org/languagetool/rules/eo/LanguageSpecificSpellcheckerTest.class
+org/languagetool/tagging/eo/EsperantoTaggerTest.class
+org/languagetool/tokenizers/eo/EsperantoWordTokenizerTest.class
+org/languagetool/EsperantoTest.class
+org/languagetool/rules/eo/EsperantoTest.class
+org/languagetool/rules/eo/EsperantoPatternRuleTest.class
+org/languagetool/EsperantoConcurrencyTest.class

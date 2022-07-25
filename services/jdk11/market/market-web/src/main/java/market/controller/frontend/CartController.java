@@ -163,7 +163,7 @@ public class CartController {
 	private CartDTO addToAuthorizedCart(CartItemDTO itemToAdd, String login, HttpServletRequest request, Model model) {
 		long productId = itemToAdd.getProductId();
 		int quantity = itemToAdd.getQuantity();
-		Cart updatedCart = cartService.addToCart(login, productId, quantity);
+		Cart updatedCart = cartService.addToCartReturnCart(login, productId, quantity);
 		return cartDtoAssembler.convertToModelAndUpdateAttributes(updatedCart, "cart", model, request);
 	}
 

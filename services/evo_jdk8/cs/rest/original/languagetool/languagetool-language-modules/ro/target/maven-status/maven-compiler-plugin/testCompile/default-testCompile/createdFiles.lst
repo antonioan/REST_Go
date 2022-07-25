@@ -1,0 +1,14 @@
+org/languagetool/rules/ro/RomanianTest.class
+org/languagetool/tagging/ro/RomanianTaggerTest.class
+org/languagetool/tagging/disambiguation/rules/ro/RomanianRuleDisambiguatorTest.class
+org/languagetool/tagging/ro/RomanianTaggerDiacriticsTest.class
+org/languagetool/rules/ro/SimpleReplaceRuleTest.class
+org/languagetool/RomanianConcurrencyTest.class
+org/languagetool/synthesis/ro/RomanianSynthesizerTest.class
+org/languagetool/tagging/ro/AbstractRomanianTaggerTest.class
+org/languagetool/tokenizers/ro/RomanianSentenceTokenizerTest.class
+org/languagetool/rules/ro/GenericUnpairedBracketsRuleTest.class
+org/languagetool/rules/ro/LanguageSpecificSpellcheckerTest.class
+org/languagetool/rules/ro/CompoundRuleTest.class
+org/languagetool/tokenizers/ro/RomanianWordTokenizerTest.class
+org/languagetool/rules/ro/RomanianPatternRuleTest.class

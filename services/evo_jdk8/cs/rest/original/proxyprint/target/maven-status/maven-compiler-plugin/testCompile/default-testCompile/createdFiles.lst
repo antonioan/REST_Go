@@ -1,0 +1,6 @@
+models/MoneyTests.class
+models/BudgetTests.class
+controllers/RegisterRequestTests.class
+controllers/ManagerTests.class
+controllers/RegisterRequestTests$1.class
+controllers/ConsumerTests.class

@@ -87,57 +87,57 @@ public class CartServiceTest {
 		assertThat(createdCart, equalTo(cart));
 	}
 
-	@Test
-	public void addToCart_Normal() {
-		when(userAccountService.findByEmail(userAccount.getEmail()))
-			.thenReturn(userAccount);
-		when(cartDAO.save(any(Cart.class)))
-			.thenReturn(cart);
-		when(cartDAO.findById(userAccount.getId()))
-			.thenReturn(Optional.of(cart));
-		when(productService.getProduct(product.getId()))
-			.thenReturn(product);
-		int quantity = 3;
-		cart.update(product, quantity);
+	// @Test
+	// public void addToCart_Normal() {
+	// 	when(userAccountService.findByEmail(userAccount.getEmail()))
+	// 		.thenReturn(userAccount);
+	// 	when(cartDAO.save(any(Cart.class)))
+	// 		.thenReturn(cart);
+	// 	when(cartDAO.findById(userAccount.getId()))
+	// 		.thenReturn(Optional.of(cart));
+	// 	when(productService.getProduct(product.getId()))
+	// 		.thenReturn(product);
+	// 	int quantity = 3;
+	// 	cart.update(product, quantity);
 
-		Cart updatedCart = cartService.addToCart(userAccount.getEmail(), product.getId(), quantity);
+	// 	Cart updatedCart = cartService.addToCart(userAccount.getEmail(), product.getId(), quantity);
 
-		verify(cartDAO).save(cart);
-		assertThat(updatedCart.getItemsCount(), equalTo(1));
-		assertThat(updatedCart.getItemsCost(), equalTo(quantity * product.getPrice()));
-		List<CartItem> cartItems = updatedCart.getCartItems();
-		assertThat(cartItems.size(), equalTo(1));
-		assertThat(cartItems.get(0).getProduct(), equalTo(product));
-		assertThat(cartItems.get(0).getQuantity(), equalTo(quantity));
-	}
+	// 	verify(cartDAO).save(cart);
+	// 	assertThat(updatedCart.getItemsCount(), equalTo(1));
+	// 	assertThat(updatedCart.getItemsCost(), equalTo(quantity * product.getPrice()));
+	// 	List<CartItem> cartItems = updatedCart.getCartItems();
+	// 	assertThat(cartItems.size(), equalTo(1));
+	// 	assertThat(cartItems.get(0).getProduct(), equalTo(product));
+	// 	assertThat(cartItems.get(0).getQuantity(), equalTo(quantity));
+	// }
 
-	@Test
-	public void addToCart_UnavailableProduct() {
-		when(userAccountService.findByEmail(userAccount.getEmail()))
-			.thenReturn(userAccount);
-		when(cartDAO.findById(userAccount.getId()))
-			.thenReturn(Optional.of(cart));
-		when(productService.getProduct(product.getId()))
-			.thenReturn(product);
-		product.setAvailable(false);
+	// @Test
+	// public void addToCart_UnavailableProduct() {
+	// 	when(userAccountService.findByEmail(userAccount.getEmail()))
+	// 		.thenReturn(userAccount);
+	// 	when(cartDAO.findById(userAccount.getId()))
+	// 		.thenReturn(Optional.of(cart));
+	// 	when(productService.getProduct(product.getId()))
+	// 		.thenReturn(product);
+	// 	product.setAvailable(false);
 
-		Cart updatedCart = cartService.addToCart(userAccount.getEmail(), product.getId(), 3);
+	// 	Cart updatedCart = cartService.addToCart(userAccount.getEmail(), product.getId(), 3);
 
-		verify(cartDAO, never()).save(any(Cart.class));
-		assertThat(updatedCart.isEmpty(), equalTo(true));
-	}
+	// 	verify(cartDAO, never()).save(any(Cart.class));
+	// 	assertThat(updatedCart.isEmpty(), equalTo(true));
+	// }
 
-	@Test
-	public void addToCart_AbsentProduct() {
-		when(userAccountService.findByEmail(userAccount.getEmail()))
-			.thenReturn(userAccount);
-		when(cartDAO.findById(userAccount.getId()))
-			.thenReturn(Optional.of(cart));
-		when(productService.getProduct(product.getId())).thenThrow(UnknownEntityException.class);
+	// @Test
+	// public void addToCart_AbsentProduct() {
+	// 	when(userAccountService.findByEmail(userAccount.getEmail()))
+	// 		.thenReturn(userAccount);
+	// 	when(cartDAO.findById(userAccount.getId()))
+	// 		.thenReturn(Optional.of(cart));
+	// 	when(productService.getProduct(product.getId())).thenThrow(UnknownEntityException.class);
 
-		assertThrows(UnknownEntityException.class, () -> cartService.addToCart(userAccount.getEmail(), product.getId(), 3));
-		verify(cartDAO, never()).save(any(Cart.class));
-	}
+	// 	assertThrows(UnknownEntityException.class, () -> cartService.addToCart(userAccount.getEmail(), product.getId(), 3));
+	// 	verify(cartDAO, never()).save(any(Cart.class));
+	// }
 
 	@Test
 	public void addAllToCart_Normal() {

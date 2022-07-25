@@ -1,0 +1,6 @@
+org/languagetool/KhmerConcurrencyTest.class
+org/languagetool/rules/km/KhmerWordRepeatRuleTest.class
+org/languagetool/rules/km/KhmerPatternRuleTest.class
+org/languagetool/rules/km/LanguageSpecificSpellcheckerTest.class
+org/languagetool/rules/km/KhmerTest.class
+org/languagetool/rules/km/KhmerSpaceBeforeRuleTest.class

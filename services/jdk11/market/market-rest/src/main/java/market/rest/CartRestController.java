@@ -2,12 +2,15 @@ package market.rest;
 
 import market.domain.Cart;
 import market.domain.Order;
+import market.domain.Product;
 import market.dto.CartDTO;
 import market.dto.CartItemDTO;
 import market.dto.CreditCardDTO;
 import market.dto.OrderDTO;
+import market.dto.ProductDTO;
 import market.dto.assembler.CartDtoAssembler;
 import market.dto.assembler.OrderDtoAssembler;
+import market.dto.assembler.ProductDtoAssembler;
 import market.exception.EmptyCartException;
 import market.exception.UnknownEntityException;
 import market.properties.MarketProperties;
@@ -33,6 +36,7 @@ import java.net.URI;
 import java.security.Principal;
 
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.linkTo;
+import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 
 @RestController
 @RequestMapping(value = "customer/cart")
@@ -47,6 +51,8 @@ public class CartRestController {
 	private final CartDtoAssembler cartDtoAssembler;
 	private final OrderDtoAssembler orderDtoAssembler = new OrderDtoAssembler();
 	private final MarketProperties marketProperties;
+
+	private final ProductDtoAssembler productAssembler = new ProductDtoAssembler();
 
 	public CartRestController(CartService cartService, OrderService orderService, MarketProperties marketProperties) {
 		this.cartService = cartService;
@@ -68,14 +74,14 @@ public class CartRestController {
 	/**
 	 * Adding a product.
 	 *
-	 * @return updated cart
+	 * @return added product
 	 * @throws UnknownEntityException if the specified product does not exist
 	 */
 	@PutMapping
-	public CartDTO addItem(Principal principal, @RequestBody @Valid CartItemDTO item) {
+	public ProductDTO addItem(Principal principal, @RequestBody @Valid CartItemDTO item) {
 		String login = principal.getName();
-		Cart cart = cartService.addToCart(login, item.getProductId(), item.getQuantity());
-		return toDto(cart);
+		Product product = cartService.addToCart(login, item.getProductId(), item.getQuantity());
+		return productAssembler.toModel(product);
 	}
 
 	/**

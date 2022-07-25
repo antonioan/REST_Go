@@ -1,0 +1,7 @@
+org/languagetool/tokenizers/zh/ChineseSentenceTokenizerTest.class
+org/languagetool/rules/zh/ChinesePatternRuleTest.class
+org/languagetool/rules/zh/ChineseTest.class
+org/languagetool/rules/zh/LanguageSpecificSpellcheckerTest.class
+org/languagetool/tagging/zh/ChineseTaggerTest.class
+org/languagetool/tokenizers/zh/ChineseWordTokenizerTest.class
+org/languagetool/ChineseConcurrencyTest.class

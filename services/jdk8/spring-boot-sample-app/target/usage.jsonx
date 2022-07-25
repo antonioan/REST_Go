@@ -1,0 +1,92 @@
+[
+  {
+    "source": "^the client calls /version$",
+    "steps": [
+      {
+        "name": "the client calls /version",
+        "aggregatedDurations": {
+          "average": 0.0657625,
+          "median": 0.0657625
+        },
+        "durations": [
+          {
+            "duration": 0.0657625,
+            "location": "version.feature:3"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^the client receives response status code of (\\d+)$",
+    "steps": [
+      {
+        "name": "the client receives response status code of 200",
+        "aggregatedDurations": {
+          "average": 0.010722208,
+          "median": 0.010722208
+        },
+        "durations": [
+          {
+            "duration": 0.010722208,
+            "location": "health.feature:4"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^the client receives server version (.+)$",
+    "steps": [
+      {
+        "name": "the client receives server version 1.0",
+        "aggregatedDurations": {
+          "average": 0.003598125,
+          "median": 0.003598125
+        },
+        "durations": [
+          {
+            "duration": 0.003598125,
+            "location": "version.feature:5"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^the client calls /health$",
+    "steps": [
+      {
+        "name": "the client calls /health",
+        "aggregatedDurations": {
+          "average": 0.792075792,
+          "median": 0.792075792
+        },
+        "durations": [
+          {
+            "duration": 0.792075792,
+            "location": "health.feature:3"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^the client receives status code of (\\d+)$",
+    "steps": [
+      {
+        "name": "the client receives status code of 200",
+        "aggregatedDurations": {
+          "average": 0.000523417,
+          "median": 0.000523417
+        },
+        "durations": [
+          {
+            "duration": 0.000523417,
+            "location": "version.feature:4"
+          }
+        ]
+      }
+    ]
+  }
+]

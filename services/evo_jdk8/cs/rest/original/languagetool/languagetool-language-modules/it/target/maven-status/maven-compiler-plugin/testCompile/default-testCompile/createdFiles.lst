@@ -1,0 +1,8 @@
+org/languagetool/tagging/it/ItalianTaggerTest.class
+org/languagetool/rules/it/ItalianTest.class
+org/languagetool/synthesis/it/ItalianSynthesizerTest.class
+org/languagetool/rules/it/LanguageSpecificSpellcheckerTest.class
+org/languagetool/rules/it/ItalianWordRepeatRuleTest.class
+org/languagetool/rules/it/ItalianPatternRuleTest.class
+org/languagetool/ItalianConcurrencyTest.class
+org/languagetool/tokenizers/it/ItalianSRXSentenceTokenizerTest.class

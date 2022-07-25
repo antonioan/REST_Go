@@ -1,0 +1,5 @@
+org/languagetool/rules/sl/LanguageSpecificSpellcheckerTest.class
+org/languagetool/SlovenianConcurrencyTest.class
+org/languagetool/rules/sl/SlovenianTest.class
+org/languagetool/rules/sl/SlovenianPatternRuleTest.class
+org/languagetool/JLanguageToolTest.class

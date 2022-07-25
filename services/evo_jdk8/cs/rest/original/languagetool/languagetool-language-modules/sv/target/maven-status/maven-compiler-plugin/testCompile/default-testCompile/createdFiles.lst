@@ -1,0 +1,7 @@
+org/languagetool/SwedishConcurrencyTest.class
+org/languagetool/rules/sv/LanguageSpecificSpellcheckerTest.class
+org/languagetool/rules/sv/SwedishTest.class
+org/languagetool/rules/sv/SwedishPatternRuleTest.class
+org/languagetool/tagging/sv/SwedishTaggerTest.class
+org/languagetool/tokenizers/sv/SwedishSRXSentenceTokenizerTest.class
+org/languagetool/rules/sv/CompoundRuleTest.class

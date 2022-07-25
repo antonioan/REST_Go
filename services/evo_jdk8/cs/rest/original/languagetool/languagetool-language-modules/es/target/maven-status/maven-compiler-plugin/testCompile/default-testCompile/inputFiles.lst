@@ -1,0 +1,16 @@
+/Users/antonio/workspace/benchmark/REST_GO/services/evo_jdk8/cs/rest/original/languagetool/languagetool-language-modules/es/src/test/java/org/languagetool/rules/es/QuestionMarkRuleTest.java
+/Users/antonio/workspace/benchmark/REST_GO/services/evo_jdk8/cs/rest/original/languagetool/languagetool-language-modules/es/src/test/java/org/languagetool/rules/es/SpanishTest.java
+/Users/antonio/workspace/benchmark/REST_GO/services/evo_jdk8/cs/rest/original/languagetool/languagetool-language-modules/es/src/test/java/org/languagetool/SpanishConcurrencyTest.java
+/Users/antonio/workspace/benchmark/REST_GO/services/evo_jdk8/cs/rest/original/languagetool/languagetool-language-modules/es/src/test/java/org/languagetool/rules/es/SpanishPatternRuleTest.java
+/Users/antonio/workspace/benchmark/REST_GO/services/evo_jdk8/cs/rest/original/languagetool/languagetool-language-modules/es/src/test/java/org/languagetool/rules/es/SimpleReplaceRuleTest.java
+/Users/antonio/workspace/benchmark/REST_GO/services/evo_jdk8/cs/rest/original/languagetool/languagetool-language-modules/es/src/test/java/org/languagetool/rules/es/LanguageSpecificSpellcheckerTest.java
+/Users/antonio/workspace/benchmark/REST_GO/services/evo_jdk8/cs/rest/original/languagetool/languagetool-language-modules/es/src/test/java/org/languagetool/tokenizers/es/SpanishSentenceTokenizerTest.java
+/Users/antonio/workspace/benchmark/REST_GO/services/evo_jdk8/cs/rest/original/languagetool/languagetool-language-modules/es/src/test/java/org/languagetool/synthesis/es/SpanishSynthesizerTest.java
+/Users/antonio/workspace/benchmark/REST_GO/services/evo_jdk8/cs/rest/original/languagetool/languagetool-language-modules/es/src/test/java/org/languagetool/rules/es/GenericUnpairedBracketsRuleTest.java
+/Users/antonio/workspace/benchmark/REST_GO/services/evo_jdk8/cs/rest/original/languagetool/languagetool-language-modules/es/src/test/java/org/languagetool/tagging/es/SpanishTaggerTest.java
+/Users/antonio/workspace/benchmark/REST_GO/services/evo_jdk8/cs/rest/original/languagetool/languagetool-language-modules/es/src/test/java/org/languagetool/tokenizers/es/SpanishWordTokenizerTest.java
+/Users/antonio/workspace/benchmark/REST_GO/services/evo_jdk8/cs/rest/original/languagetool/languagetool-language-modules/es/src/test/java/org/languagetool/rules/es/SpanishWikipediaRuleTest.java
+/Users/antonio/workspace/benchmark/REST_GO/services/evo_jdk8/cs/rest/original/languagetool/languagetool-language-modules/es/src/test/java/org/languagetool/rules/es/MorfologikSpanishSpellerRuleTest.java
+/Users/antonio/workspace/benchmark/REST_GO/services/evo_jdk8/cs/rest/original/languagetool/languagetool-language-modules/es/src/test/java/org/languagetool/rules/es/SimpleReplaceVerbsRuleTest.java
+/Users/antonio/workspace/benchmark/REST_GO/services/evo_jdk8/cs/rest/original/languagetool/languagetool-language-modules/es/src/test/java/org/languagetool/rules/es/SpanishConfusionProbabilityRuleTest.java
+/Users/antonio/workspace/benchmark/REST_GO/services/evo_jdk8/cs/rest/original/languagetool/languagetool-language-modules/es/src/test/java/org/languagetool/rules/es/SpanishWrongWordInContextRuleTest.java

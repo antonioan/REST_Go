@@ -2,6 +2,7 @@ package market.service;
 
 import market.domain.Cart;
 import market.domain.CartItem;
+import market.domain.Product;
 
 import java.util.List;
 
@@ -14,9 +15,15 @@ public interface CartService {
 
 	/**
 	 * Adds new item into the specified user cart and saves cart.
-	 * @return updated cart
+	 * @return added product
 	 */
-	Cart addToCart(String userEmail, long productId, int quantity);
+	Product addToCart(String userEmail, long productId, int quantity);
+
+	/**
+	 * Adds new item into the specified user cart and saves cart.
+	 * @return cart after changes
+	 */
+	Cart addToCartReturnCart(String userEmail, long productId, int quantity);
 
 	/**
 	 * Adds all the listed items into the specified user cart and saves cart.

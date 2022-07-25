@@ -1,0 +1,6 @@
+org/languagetool/TagalogConcurrencyTest.class
+org/languagetool/language/tl/MorfologikTagalogSpellerRuleTest.class
+org/languagetool/rules/tl/TagalogTest.class
+org/languagetool/tokenizers/tl/TagalogSRXSentenceTokenizerTest.class
+org/languagetool/rules/tl/TagalogPatternRuleTest.class
+org/languagetool/rules/tl/LanguageSpecificSpellcheckerTest.class

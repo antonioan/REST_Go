@@ -1,0 +1,9 @@
+se/devscout/scoutapi/dao/MediaFileDaoTest.class
+se/devscout/scoutapi/dao/ActivityDaoTest.class
+se/devscout/scoutapi/dao/DaoTest.class
+se/devscout/scoutapi/dao/TagDaoTest.class
+se/devscout/scoutapi/model/MediaFileTest.class
+se/devscout/scoutapi/dao/ActivityRatingDaoTest.class
+se/devscout/scoutapi/dao/HibernateUtil.class
+se/devscout/scoutapi/dao/SystemMessageDaoTest.class
+se/devscout/scoutapi/dao/UserDaoTest.class

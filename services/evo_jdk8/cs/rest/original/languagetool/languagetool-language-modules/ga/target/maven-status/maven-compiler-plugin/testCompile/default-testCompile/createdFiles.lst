@@ -1,0 +1,6 @@
+org/languagetool/rules/ga/MorfologikIrishSpellerRuleTest.class
+org/languagetool/rules/ga/IrishPatternRuleTest.class
+org/languagetool/tagging/ga/IrishTaggerTest.class
+org/languagetool/rules/ga/DhaNoBeirtRuleTest.class
+org/languagetool/tagging/disambiguation/rules/ga/IrishDisambiguationRuleTest.class
+org/languagetool/tagging/disambiguation/rules/ga/UtilsTest.class

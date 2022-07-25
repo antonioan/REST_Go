@@ -1,0 +1,15 @@
+org/languagetool/rules/ar/ArabicConfusionProbabilityRuleTest.class
+org/languagetool/rules/ar/ArabicDarjaRuleTest.class
+org/languagetool/rules/ar/ArabicSimpleReplaceRuleTest.class
+org/languagetool/rules/ar/ArabicWordCoherencyRuleTest.class
+org/languagetool/rules/ar/ArabicHunspellSpellerRuleTest.class
+org/languagetool/rules/ar/ArabicRedundancyRuleTest.class
+org/languagetool/rules/ar/ArabicDiacriticsCheckRuleTest.class
+org/languagetool/rules/ar/ArabicWordinessRuleTest.class
+org/languagetool/rules/ar/ArabicPatternRuleTest.class
+org/languagetool/rules/ar/ArabicTaggerTest.class
+org/languagetool/synthesis/ar/ArabicSynthesizerTest.class
+org/languagetool/rules/ar/ArabicLanguageSpecificTest.class
+org/languagetool/rules/ar/ArabicHomophonesCheckRuleTest.class
+org/languagetool/rules/ar/ArabicSRXSentenceTokenizerTest.class
+org/languagetool/rules/ar/ArabicTagManagerTest.class

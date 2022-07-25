@@ -1,0 +1,5 @@
+org/languagetool/rules/el/GreekTest.class
+org/languagetool/rules/el/LanguageSpecificSpellcheckerTest.class
+org/languagetool/GreekConcurrencyTest.class
+org/languagetool/rules/el/GreekPatternRuleTest.class
+org/languagetool/rules/el/NumeralStressRuleTest.class

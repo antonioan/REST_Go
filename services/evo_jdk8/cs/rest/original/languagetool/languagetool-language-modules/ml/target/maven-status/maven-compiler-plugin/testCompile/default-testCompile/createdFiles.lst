@@ -1,0 +1,4 @@
+org/languagetool/tokenizers/ml/MalayalamSRXSentenceTokenizerTest.class
+org/languagetool/MalayalamConcurrencyTest.class
+org/languagetool/rules/ml/MalayalamPatternRuleTest.class
+org/languagetool/rules/ml/MorfologikMalayalamSpellerRuleTest.class

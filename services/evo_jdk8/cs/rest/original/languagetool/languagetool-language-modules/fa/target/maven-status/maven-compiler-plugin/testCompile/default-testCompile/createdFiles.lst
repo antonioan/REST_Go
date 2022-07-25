@@ -1,0 +1,6 @@
+org/languagetool/rules/fa/PersianSpaceBeforeRuleTest.class
+org/languagetool/rules/fa/PersianPatternRuleTest.class
+org/languagetool/rules/fa/LanguageSpecificSpellcheckerTest.class
+org/languagetool/rules/fa/WordCoherencyRuleTest.class
+org/languagetool/rules/fa/PersianTest.class
+org/languagetool/tokenizers/PersianSRXSentenceTokenizerTest.class

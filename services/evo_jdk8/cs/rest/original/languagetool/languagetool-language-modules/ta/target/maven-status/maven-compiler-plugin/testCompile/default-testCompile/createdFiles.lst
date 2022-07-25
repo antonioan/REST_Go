@@ -1,0 +1,3 @@
+org/languagetool/rules/ta/TamilTest.class
+org/languagetool/rules/ta/TamilPatternRuleTest.class
+org/languagetool/rules/ta/LanguageSpecificSpellcheckerTest.class

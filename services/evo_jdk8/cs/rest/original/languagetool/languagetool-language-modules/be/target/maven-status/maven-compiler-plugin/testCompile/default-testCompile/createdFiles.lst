@@ -1,0 +1,4 @@
+org/languagetool/rules/be/BelarusianPatternRuleTest.class
+org/languagetool/rules/be/BelarusianTest.class
+org/languagetool/rules/be/LanguageSpecificSpellcheckerTest.class
+org/languagetool/BelarusianConcurrencyTest.class

@@ -1,0 +1,15 @@
+/Users/antonio/workspace/benchmark/REST_GO/services/evo_jdk8/cs/rest/original/languagetool/languagetool-language-modules/ar/src/test/java/org/languagetool/rules/ar/ArabicRedundancyRuleTest.java
+/Users/antonio/workspace/benchmark/REST_GO/services/evo_jdk8/cs/rest/original/languagetool/languagetool-language-modules/ar/src/test/java/org/languagetool/rules/ar/ArabicSimpleReplaceRuleTest.java
+/Users/antonio/workspace/benchmark/REST_GO/services/evo_jdk8/cs/rest/original/languagetool/languagetool-language-modules/ar/src/test/java/org/languagetool/rules/ar/ArabicDiacriticsCheckRuleTest.java
+/Users/antonio/workspace/benchmark/REST_GO/services/evo_jdk8/cs/rest/original/languagetool/languagetool-language-modules/ar/src/test/java/org/languagetool/rules/ar/ArabicHomophonesCheckRuleTest.java
+/Users/antonio/workspace/benchmark/REST_GO/services/evo_jdk8/cs/rest/original/languagetool/languagetool-language-modules/ar/src/test/java/org/languagetool/rules/ar/ArabicWordinessRuleTest.java
+/Users/antonio/workspace/benchmark/REST_GO/services/evo_jdk8/cs/rest/original/languagetool/languagetool-language-modules/ar/src/test/java/org/languagetool/rules/ar/ArabicTaggerTest.java
+/Users/antonio/workspace/benchmark/REST_GO/services/evo_jdk8/cs/rest/original/languagetool/languagetool-language-modules/ar/src/test/java/org/languagetool/rules/ar/ArabicConfusionProbabilityRuleTest.java
+/Users/antonio/workspace/benchmark/REST_GO/services/evo_jdk8/cs/rest/original/languagetool/languagetool-language-modules/ar/src/test/java/org/languagetool/synthesis/ar/ArabicSynthesizerTest.java
+/Users/antonio/workspace/benchmark/REST_GO/services/evo_jdk8/cs/rest/original/languagetool/languagetool-language-modules/ar/src/test/java/org/languagetool/rules/ar/ArabicTagManagerTest.java
+/Users/antonio/workspace/benchmark/REST_GO/services/evo_jdk8/cs/rest/original/languagetool/languagetool-language-modules/ar/src/test/java/org/languagetool/rules/ar/ArabicSRXSentenceTokenizerTest.java
+/Users/antonio/workspace/benchmark/REST_GO/services/evo_jdk8/cs/rest/original/languagetool/languagetool-language-modules/ar/src/test/java/org/languagetool/rules/ar/ArabicWordCoherencyRuleTest.java
+/Users/antonio/workspace/benchmark/REST_GO/services/evo_jdk8/cs/rest/original/languagetool/languagetool-language-modules/ar/src/test/java/org/languagetool/rules/ar/ArabicHunspellSpellerRuleTest.java
+/Users/antonio/workspace/benchmark/REST_GO/services/evo_jdk8/cs/rest/original/languagetool/languagetool-language-modules/ar/src/test/java/org/languagetool/rules/ar/ArabicLanguageSpecificTest.java
+/Users/antonio/workspace/benchmark/REST_GO/services/evo_jdk8/cs/rest/original/languagetool/languagetool-language-modules/ar/src/test/java/org/languagetool/rules/ar/ArabicPatternRuleTest.java
+/Users/antonio/workspace/benchmark/REST_GO/services/evo_jdk8/cs/rest/original/languagetool/languagetool-language-modules/ar/src/test/java/org/languagetool/rules/ar/ArabicDarjaRuleTest.java

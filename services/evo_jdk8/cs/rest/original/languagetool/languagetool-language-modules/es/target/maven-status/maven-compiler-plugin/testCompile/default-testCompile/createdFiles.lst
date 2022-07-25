@@ -1,0 +1,16 @@
+org/languagetool/synthesis/es/SpanishSynthesizerTest.class
+org/languagetool/rules/es/QuestionMarkRuleTest.class
+org/languagetool/rules/es/SpanishPatternRuleTest.class
+org/languagetool/tokenizers/es/SpanishSentenceTokenizerTest.class
+org/languagetool/rules/es/GenericUnpairedBracketsRuleTest.class
+org/languagetool/rules/es/SpanishConfusionProbabilityRuleTest.class
+org/languagetool/tokenizers/es/SpanishWordTokenizerTest.class
+org/languagetool/rules/es/LanguageSpecificSpellcheckerTest.class
+org/languagetool/SpanishConcurrencyTest.class
+org/languagetool/rules/es/SpanishWrongWordInContextRuleTest.class
+org/languagetool/rules/es/SpanishWikipediaRuleTest.class
+org/languagetool/rules/es/SimpleReplaceVerbsRuleTest.class
+org/languagetool/tagging/es/SpanishTaggerTest.class
+org/languagetool/rules/es/MorfologikSpanishSpellerRuleTest.class
+org/languagetool/rules/es/SpanishTest.class
+org/languagetool/rules/es/SimpleReplaceRuleTest.class
