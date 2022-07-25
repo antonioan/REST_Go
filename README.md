@@ -1,3 +1,14 @@
+# Antonio note
+
+Large JARs for `market-web` and `languagetool-server` were not pushed into the repo. You will have to `mvn clean install -DskipTests` with Maven 3.8.6 inside the following directories (with the corresponding JDK version):
+```
+services/evo_jdk8/cs/rest/original/languagetool/languagetool-server
+services/jdk11/market/market-web
+``` 
+and if it does not work, try running that same `mvn` command in their parent directories (`languagetool` and `market`).
+
+Original `README.md` follows.
+
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6579151.svg)](https://doi.org/10.5281/zenodo.6579151)
 
 # Automated Test Generation for REST APIs: No Time to Rest Yet

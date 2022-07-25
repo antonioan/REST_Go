@@ -1,4 +1,4 @@
-target/
+target/*report*
 logs/
 venv/
 output/
@@ -19,7 +19,6 @@ restler/
 rest-gitlab/
 
 .ethereum
-cp.txt
 *.log
 log_*
 evomaster-benchmark-cs-rest-artificial-news.iml
