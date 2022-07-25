@@ -15,26 +15,26 @@ tools = ["evomaster-whitebox_data", "restler_data", "resttestgen_data", "restest
 class_name = ["app.coronawarn", "com.giassi.microservice", "com.test.sampleapp", "com.github.chrisgleissner", "org.restscs", "se.devscout.scoutapi", "com.in28minutes.rest.webservices.restfulwebservices", "eu.fayder.restcountries", "io.github.proxyprint.kitchen", "com.pfa.pack", "com.sw.project", "com.mongodb.starter", "org.devgateway", "org.tsdes.spring.examples.news", "org.restncs", "market", "org.languagetool", "org.cbioportal.genome_nexus", "org.javiermf.features", "io.blk.erc20"]
 
 paths = [
-    "services/evo_jdk8/cs/rest/original/features-service",
-    "services/evo_jdk8/cs/rest/original/languagetool",
-    "services/evo_jdk8/cs/rest/artificial/ncs",
-    "services/evo_jdk8/cs/rest/artificial/news",
-    "services/evo_jdk8/cs/rest-gui/ocvn",
-    "services/evo_jdk8/cs/rest/original/proxyprint",
-    "services/evo_jdk8/cs/rest/original/restcountries",
-    "services/evo_jdk8/cs/rest/original/scout-api",
-    "services/evo_jdk8/cs/rest/artificial/scs",
-    "services/jdk8/erc20-rest-service",
-    "services/jdk8/genome-nexus",
-    "services/jdk8/person-controller",
-    "services/jdk8/problem-controller",
-    "services/jdk8/rest-study",
-    "services/jdk8/spring-batch-rest",
-    "services/jdk8/spring-boot-sample-app",
-    "services/jdk8/user-management",
-    "services/jdk11/cwa-verification",
-    "services/jdk11/market",
-    "services/jdk11/project-tracking-system",
+    "services/evo_jdk8/cs/rest/original/features-service",      # X
+    "services/evo_jdk8/cs/rest/original/languagetool",          # O
+    "services/evo_jdk8/cs/rest/artificial/ncs",                 # O
+    "services/evo_jdk8/cs/rest/artificial/news",                # X
+    "services/evo_jdk8/cs/rest-gui/ocvn",                       # ?
+    "services/evo_jdk8/cs/rest/original/proxyprint",            # X
+    "services/evo_jdk8/cs/rest/original/restcountries",         # O
+    "services/evo_jdk8/cs/rest/original/scout-api",             # X
+    "services/evo_jdk8/cs/rest/artificial/scs",                 # O
+    "services/jdk8/erc20-rest-service",                         # ?
+    "services/jdk8/genome-nexus",                               # O
+    "services/jdk8/person-controller",                          # Y
+    "services/jdk8/problem-controller",                         # Y
+    "services/jdk8/rest-study",                                 # O
+    "services/jdk8/spring-batch-rest",                          # Y
+    "services/jdk8/spring-boot-sample-app",                     # Y
+    "services/jdk8/user-management",                            # Y
+    "services/jdk11/cwa-verification",                          # O
+    "services/jdk11/market",                                    # Y
+    "services/jdk11/project-tracking-system",                   # B
 ]
 
 port = sys.argv[1]

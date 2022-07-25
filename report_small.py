@@ -39,22 +39,23 @@ paths = [
     "services/jdk11/project-tracking-system",
 ]
 
+APPINDEX = 0
 port = sys.argv[1]
-name = services[19]
-path = paths[19]
+name = services[APPINDEX]
+path = paths[APPINDEX]
 
-print(services[19] + " is processing....")
+print(services[APPINDEX] + " is processing....")
 subdirs = [x[0] for x in os.walk(path)]
 class_files = []
 jacoco_command2 = ''
 
 for subdir in subdirs:
-    if services[19] in subdir and '/target/classes/' in subdir:
+    if services[APPINDEX] in subdir and '/target/classes/' in subdir:
         target_dir = subdir[:subdir.rfind('/target/classes/') + 15]
         if target_dir not in class_files:
             class_files.append(target_dir)
             jacoco_command2 = jacoco_command2 + ' --classfiles ' + target_dir
-    if services[19] in subdir and '/build/classes/' in subdir:
+    if services[APPINDEX] in subdir and '/build/classes/' in subdir:
         target_dir = subdir[:subdir.rfind('/build/classes/') + 14]
         if target_dir not in class_files:
             class_files.append(target_dir)
@@ -81,7 +82,7 @@ for f in files:
             count = 0
         if 'jacoco' in f and '.exec' in f:
             count = count + 1
-            jacoco_file = services[19] + '_' + str(count) + '.csv'
+            jacoco_file = services[APPINDEX] + '_' + str(count) + '.csv'
             subprocess.run(jacoco_command1 + f + jacoco_command2 + jacoco_file, shell=True)
         elif 'log' in f:
             subprocess.call('split -l 10000000 ' + f, shell=True)
@@ -270,10 +271,10 @@ with open('res.csv', 'w') as f:
     f.write(res)
 
 
-subprocess.run("mkdir -p " + "data/" + services[19], shell=True)
-subprocess.call('mv res.csv ' + "data/" + services[19], shell=True)
-subprocess.call('mv *.csv ' + "data/" + services[19], shell=True)
-subprocess.call('mv error.json ' + "data/" + services[19], shell=True)
-subprocess.call('mv time.json ' + "data/" + services[19], shell=True)
-subprocess.call('mv jacoco*.exec ' + "data/" + services[19], shell=True)
-subprocess.call('mv log* ' + "data/" + services[19], shell=True)
+subprocess.run("mkdir -p " + "data/" + services[APPINDEX], shell=True)
+subprocess.call('mv res.csv ' + "data/" + services[APPINDEX], shell=True)
+subprocess.call('mv *.csv ' + "data/" + services[APPINDEX], shell=True)
+subprocess.call('mv error.json ' + "data/" + services[APPINDEX], shell=True)
+subprocess.call('mv time.json ' + "data/" + services[APPINDEX], shell=True)
+subprocess.call('mv jacoco*.exec ' + "data/" + services[APPINDEX], shell=True)
+subprocess.call('mv log* ' + "data/" + services[APPINDEX], shell=True)

@@ -5,14 +5,14 @@ import subprocess
 
 
 def whitebox(port):
-    timeout = time.time() + 60 * 60 * int(time_limit)
+    timeout = time.time() + 60 * 60 * float(time_limit)
     while time.time() < timeout:
         subprocess.run("rm -rf " + service, shell=True)
         subprocess.run("java -jar evomaster.jar --sutControllerPort " + str(port) + " --maxTime " + time_limit + "h --outputFolder " + service, shell=True)
 
 
 def blackbox(swagger, port):
-    timeout = time.time() + 60 * 60 * int(time_limit)
+    timeout = time.time() + 60 * 60 * float(time_limit)
     while time.time() < timeout:
         if tool == "dredd":
             subprocess.run("dredd " + swagger + ' http://localhost:' + str(port), shell=True)
@@ -54,7 +54,9 @@ if __name__ == "__main__":
     tool = sys.argv[1]
     service = sys.argv[2]
     port = sys.argv[3]
-    time_limit = "1"
+    time_limit = "0.001"
+
+    print(f"Will run {tool} on {service} (assumed running on {port}) for {60 * 60 * float(time_limit)} seconds")
 
     curdir = os.getcwd()
 
@@ -64,7 +66,7 @@ if __name__ == "__main__":
         subprocess.run("python3 run_service.py " + service + " " + str(port) + " blackbox", shell=True)
 
     print("Service started in the background. To check or kill the session, please see README file.")
-    time.sleep(60)
+    time.sleep(5)
 
     if service == "features-service":
         if tool == "evomaster-whitebox":
@@ -278,5 +280,5 @@ if __name__ == "__main__":
     print(
         "Experiments are done. We are safely closing the service now. If you want to run more, please check if there is unclosed session. You can check it with 'tmux ls' command. To close the session, you can run 'tmux kill-sess -t {session name}'")
 
-    time.sleep(180)
+    time.sleep(30)
     subprocess.run("tmux kill-sess -t " + service, shell=True)

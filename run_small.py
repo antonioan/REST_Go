@@ -53,9 +53,12 @@ def blackbox(swagger, port):
 
 if __name__ == "__main__":
     tool = sys.argv[1]
-    port = sys.argv[2]
-    service = "project-tracking-system"
-    time_limit = "0.1"
+    service = sys.argv[2]
+    port = sys.argv[3]
+    time_limit = "0.001"
+
+    print(f"Will run {tool} on {service} (assumed running on {port}) for {60 * 60 * float(time_limit)} seconds")
+    
     curdir = os.getcwd()
 
     if tool == "evomaster-whitebox":
@@ -64,11 +67,11 @@ if __name__ == "__main__":
         subprocess.run("python3 run_service.py " + service + " " + str(port) + " blackbox", shell=True)
 
     print("Service started in the background. To check or kill the session, please see README file.")
-    time.sleep(10)
+    time.sleep(5)
 
     subprocess.run("tmux new -d -s small_cov 'sh small_cov.sh " + str(port) + "'", shell=True)
     print("We are getting coverage now.")
-    time.sleep(10)
+    time.sleep(5)
 
     if tool == "evomaster-whitebox":
         whitebox(40119)
@@ -82,5 +85,5 @@ if __name__ == "__main__":
         blackbox(os.path.join(curdir, "doc/project_swagger.json"), 50118)
 
     print("Experiments are done. We are safely closing the service now. If you want to run more, please check if there is unclosed session. You can check it with 'tmux ls' command. To close the session, you can run 'tmux kill-sess -t {session name}'")
-    time.sleep(30)
+    time.sleep(3)
     subprocess.run("tmux kill-sess -t " + service, shell=True)
