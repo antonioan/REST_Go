@@ -10,6 +10,13 @@ public class Language {
     private String name;
     private String nativeName;
 
+    public Language(String iso639_1, String iso639_2, String name, String nativeName) {
+        this.iso639_1 = iso639_1;
+        this.iso639_2 = iso639_2;
+        this.name = name;
+        this.nativeName = nativeName;
+    }
+
     public String getIso639_1() {
         return iso639_1;
     }

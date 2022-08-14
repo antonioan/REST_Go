@@ -99,6 +99,14 @@ public class CountryService extends CountryServiceBase {
                     }
                 }
             }
+        } else {
+            for (Country country : countries) {
+                for (Language lang : country.getLanguages()) {
+                    if (language.toLowerCase().equals(lang.getName().toLowerCase())) {
+                        result.add(country);
+                    }
+                }
+            }
         }
         return result;
     }

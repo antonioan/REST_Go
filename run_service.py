@@ -9,9 +9,9 @@ def run_service(service_path, class_name):
     with open(service_path + "/run.sh", 'w') as f:
         f.write("java -Djdk.attach.allowAttachSelf=true " + cov + " -cp target/classes:target/test-classes:" + cp + ' ' + class_name + " > " + base + "/log_" + cov_port + ".txt")
     if name == "cwa-verification" or name == "market" or name == "project-tracking-system":
-        subprocess.run(". ./java11.env && cd " + service_path + " && tmux new-session -d -s " + name + " 'sh run.sh'", shell=True)
+        subprocess.run(". ./java11.env && cd " + service_path + " && tmux new-session -d -s " + name + "_" + cov_port + " 'sh run.sh'", shell=True)
     else:
-        subprocess.run(". ./java8.env && cd " + service_path + " && tmux new-session -d -s " + name + " 'sh run.sh'", shell=True)
+        subprocess.run(". ./java8.env && cd " + service_path + " && tmux new-session -d -s " + name + "_" + cov_port + " 'sh run.sh'", shell=True)
 
 
 if __name__ == "__main__":
@@ -95,32 +95,32 @@ if __name__ == "__main__":
         elif name == "scs":
             run_service("./services/evo_jdk8/em/embedded/rest/scs", "em.embedded.org.restscs.RunServer")
         elif name == "erc20-rest-service":
-            subprocess.run("tmux new -d -s erc20-rest-service '. java8.env && java " + cov + " -jar ./services/jdk8/erc20-rest-service/build/libs/erc20-rest-service-0.1.0.jar" + " > " + base + "/log_" + cov_port + ".txt'", shell=True)
+            subprocess.run(f"tmux new -d -s erc20-rest-service_{cov_port} '. java8.env && java " + cov + " -jar ./services/jdk8/erc20-rest-service/build/libs/erc20-rest-service-0.1.0.jar" + " > " + base + "/log_" + cov_port + ".txt'", shell=True)
         elif name == "genome-nexus":
-            subprocess.run("docker run --name=gn-mongo --restart=always -p 27018:27017 -d genomenexus/gn-mongo:latest", shell=True)
+            subprocess.run(f"docker run --name=gn-mongo_{cov_port} --restart=always -p 27018:27017 -d genomenexus/gn-mongo:latest", shell=True)
             time.sleep(30)
             subprocess.run("tmux new -d -s genome-nexus '. java8.env && java " + cov + " -jar ./services/jdk8/genome-nexus/web/target/web-0-unknown-version-SNAPSHOT.war" + " > " + base + "/log_" + cov_port + ".txt'", shell=True)
         elif name == "person-controller":
-            subprocess.run("docker run -d -p 27019:27017 --name mongodb mongo:latest", shell=True)
+            subprocess.run(f"docker run -d -p 27019:27017 --name mongodb_{cov_port} mongo:latest", shell=True)
             time.sleep(30)
-            subprocess.run("tmux new -d -s person-controller '. java8.env && java " + cov + " -jar ./services/jdk8/person-controller/target/java-spring-boot-mongodb-starter-1.0.0.jar" + " > " + base + "/log_" + cov_port + ".txt'", shell=True)
+            subprocess.run(f"tmux new -d -s person-controller_{cov_port} '. java8.env && java " + cov + " -jar ./services/jdk8/person-controller/target/java-spring-boot-mongodb-starter-1.0.0.jar" + " > " + base + "/log_" + cov_port + ".txt'", shell=True)
         elif name == "problem-controller":
-            subprocess.run("docker run -d -p 3307:3306 --name mysql -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=test mysql", shell=True)
+            subprocess.run(f"docker run -d -p 3307:3306 --name mysql_{cov_port} -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=test mysql", shell=True)
             time.sleep(30)
-            subprocess.run("tmux new -d -s problem-controller '. java8.env && java " + cov + " -jar ./services/jdk8/problem-controller/target/project-api-0.0.1.jar" + " > " + base + "/log_" + cov_port + ".txt'", shell=True)
+            subprocess.run(f"tmux new -d -s problem-controller_{cov_port} '. java8.env && java " + cov + " -jar ./services/jdk8/problem-controller/target/project-api-0.0.1.jar" + " > " + base + "/log_" + cov_port + ".txt'", shell=True)
         elif name == "rest-study":
-            subprocess.run("tmux new -d -s rest-study '. java8.env && java " + cov + " -jar ./services/jdk8/rest-study/target/restful-web-services-0.0.1-SNAPSHOT.jar" + " > " + base + "/log_" + cov_port + ".txt'", shell=True)
+            subprocess.run(f"tmux new -d -s rest-study_{cov_port} '. java8.env && java " + cov + " -jar ./services/jdk8/rest-study/target/restful-web-services-0.0.1-SNAPSHOT.jar" + " > " + base + "/log_" + cov_port + ".txt'", shell=True)
         elif name == "spring-batch-rest":
-            subprocess.run("tmux new -d -s spring-batch-rest '. java8.env && java " + cov + " -jar ./services/jdk8/spring-batch-rest/example/api/target/spring-batch-rest-example-core-1.5.1.jar" + " > " + base + "/log_" + cov_port + ".txt'", shell=True)
+            subprocess.run(f"tmux new -d -s spring-batch-rest_{cov_port} '. java8.env && java " + cov + " -jar ./services/jdk8/spring-batch-rest/example/api/target/spring-batch-rest-example-core-1.5.1.jar" + " > " + base + "/log_" + cov_port + ".txt'", shell=True)
         elif name == "spring-boot-sample-app":
             run_service("./services/jdk8/spring-boot-sample-app", "com.test.sampleapp.Application")
         elif name == "user-management":
-            subprocess.run("docker run -d -p 3306:3306 --name mysqldb -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=users mysql", shell=True)
+            subprocess.run(f"docker run -d -p 3306:3306 --name mysqldb_{cov_port} -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=users mysql", shell=True)
             time.sleep(30)
-            subprocess.run("tmux new -d -s user-management '. java8.env && java " + cov + " -jar ./services/jdk8/user-management/target/microdemo2-1.0.0-SNAPSHOT.jar" + " > " + base + "/log_" + cov_port + ".txt'", shell=True)
+            subprocess.run(f"tmux new -d -s user-management_{cov_port} '. java8.env && java " + cov + " -jar ./services/jdk8/user-management/target/microdemo2-1.0.0-SNAPSHOT.jar" + " > " + base + "/log_" + cov_port + ".txt'", shell=True)
         elif name == "cwa-verification":
             run_service("./services/jdk11/cwa-verification/em/embedded/rest/cwa-verification", "em.embedded.app.coronawarn.verification.RunServer")
         elif name == "market":
-            subprocess.run("tmux new -d -s market '. java11.env && java -Djdk.attach.allowAttachSelf=true " + cov + " -jar ./services/jdk11/market/market-rest/target/market-rest-0.1.2.jar" + " > " + base + "/log_" + cov_port + ".txt'", shell=True)
+            subprocess.run(f"tmux new -d -s market_{cov_port} '. java11.env && java -Djdk.attach.allowAttachSelf=true " + cov + " -jar ./services/jdk11/market/market-rest/target/market-rest-0.1.2.jar" + " > " + base + "/log_" + cov_port + ".txt'", shell=True)
         elif name == "project-tracking-system":
-            subprocess.run("tmux new -d -s project-tracking-system '. java11.env && java -Djdk.attach.allowAttachSelf=true " + cov + " -jar ./services/jdk11/project-tracking-system/target/project-tracking-system.jar" + " > " + base + "/log_" + cov_port + ".txt'", shell=True)
+            subprocess.run(f"tmux new -d -s project-tracking-system_{cov_port} '. java11.env && java -Djdk.attach.allowAttachSelf=true " + cov + " -jar ./services/jdk11/project-tracking-system/target/project-tracking-system.jar" + " > " + base + "/log_" + cov_port + ".txt'", shell=True)
