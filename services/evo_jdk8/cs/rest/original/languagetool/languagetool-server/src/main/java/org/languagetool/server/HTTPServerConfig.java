@@ -49,7 +49,7 @@ public class HTTPServerConfig {
   static final String NN_MODEL_OPTION = "--neuralNetworkModel";
 
   protected boolean verbose = false;
-  protected boolean publicAccess = false;
+  protected boolean publicAccess = true;  // Antonio: default was false
   protected int port = DEFAULT_PORT;
   protected String allowOriginUrl = null;
 
