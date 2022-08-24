@@ -67,7 +67,7 @@ public class RunServer extends EmbeddedSutController {
 
     @Override
     public String startSut() {
-        HTTPServerConfig config = new HTTPServerConfig(50101);
+        HTTPServerConfig config = new HTTPServerConfig("-p 50101 --public".split(" "));
         //TODO looks like there is a DB, but only for logs???
         DatabaseAccess.init(config);
 
